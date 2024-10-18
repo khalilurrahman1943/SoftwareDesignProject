@@ -26,5 +26,6 @@ class SalariedTest {
     fun `test salaried employee with very low salary`() {
 //        val employee = Salaried("David", 4, 20800.0)  // Minimum wage equivalent
 //        assertCloseTo(800.0, employee.pay())
+
     }
 }

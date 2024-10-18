@@ -11,6 +11,21 @@ package edu.trincoll.hr
 //
 // It should override the toString method to
 // return a string with the name and id of the employee.
-abstract class Employee(
-) {
+
+//abstract class employee with value name as string and id as int
+abstract class Employee(val name: String, val id: Int): Comparable<Employee> {
+
+    // abstract method pay() returns double
+    abstract fun pay(): Double
+
+    //implementing compareTo method
+    override fun compareTo(other: Employee): Int {
+        return this.id.compareTo(other.id)
+    }
+
+    //override tostring to return a string
+    override fun toString(): String{
+        return "Employee: (name= $name, id=$id)"
+    }
+
 }

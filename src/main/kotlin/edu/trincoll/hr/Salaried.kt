@@ -13,4 +13,5 @@ package edu.trincoll.hr
 // name, id, and salary of the employee.
 class Salaried(
 ) {
+
 }
